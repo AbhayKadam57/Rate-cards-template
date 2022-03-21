@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="bg">
+      <img src="./images/bg-pattern.svg" alt="">
+      <img class="circles" src="./images/pattern-circles.svg" alt=""> 
+    </div>
+    <div class="card-container">
+      <div class="heading">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required. </p>
+      </div>
+
+      <div class="card">
+        <div class="pageview">
+          <div class="pages">
+            <h5 class="views">100</h5>
+            <h5>pageviews</h5>
+          </div>
+          <div class="price">
+            <h2>$</h2>
+            <h2 id="price">8.00</h2>
+            <span>/month</span>
+          </div>
+         
+        </div>
+
+        <div class="slider ">
+          <input type="range" min="0" max="100" value="0" id="slider">
+          <div id="selector">
+            <div id="selectorBtn"></div>
+          </div>
+
+          <div id="progressBar"></div>
+
+        </div>
+        <div class="detail-plans">
+          <div class="empty"></div>
+          <small>Monthly Billing</small>
+          <a class="toggle">
+            <div class="ball">
+            </div>
+
+          </a>
+          <small> Yearly Billing</small>
+          <div class="discount mob">
+            <small>25% discount</small>
+          </div>
+          <div class="discount-mobile ">
+            <small>-25%</small>
+          </div>
+
+        </div>
+        <div class="divider"></div>
+
+        <div class="features">
+          <div class="feature">
+            <div class="f1">
+              <img class="check" src="./images/icon-check.svg" alt="">
+              <small> Unlimited websites</small>
+            </div>
+            <div class="f1">
+              <img class="check" src="./images/icon-check.svg" alt="">
+              <small> 100% data ownership</small>
+            </div>
+            <div class="f1">
+              <img class="check" src="./images/icon-check.svg" alt="">
+              <small>Email reports</small>
+            </div>
+          </div>
+          <div class="trial_button">
+            <button type="submit" class="btn">
+              Start my trial
+            </button>
+          </div>
+
+        </div>
+          
+        </div>
+       
+      </div>
+
+    
+    
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

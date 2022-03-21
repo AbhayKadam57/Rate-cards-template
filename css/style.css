@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    background-color: hsl(230, 100%, 99%);
+}
+
+img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.bg{
+
+    position: relative;
+    top: 0;
+    height: 450px;
+    /* min-width: 500px; */
+}
+
+.circles{
+
+    max-width:150px;
+    max-height: 30%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* .main {
+
+    position: relative;
+} */
+
+
+.card-container{
+
+    max-width: 1100px;
+    margin: 0 auto;
+    position: absolute;
+    top:100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading{
+
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h1{
+
+    color: hsl(227, 35%, 25%);
+    margin-bottom: 10px;
+}
+p{
+
+    color:rgba(126, 123, 123, 0.938);
+}
+
+.card{
+
+    width: 500px;
+    max-height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.pageview{
+
+    display: flex;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+
+.pages{
+    display: flex;
+    gap: 0;
+    justify-content: start;
+    width: 275px;
+}
+
+.price{
+
+    display: flex;
+    place-items: center;
+ 
+
+}
+.pricetag{
+    display: flex;
+    place-items: center;
+
+}
+
+span{
+
+    color:  hsl(225, 20%, 60%);
+    margin-left: 5px;
+}
+
+h2{
+
+    font-size: 35px;
+    color: hsl(227, 35%, 25%);
+}
+h5{
+
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:hsl(225, 20%, 60%);
+    margin-left:5px ;
+}
+
+.slider{
+
+    position: relative;
+    width: 100%;
+}
+
+
+#slider{
+
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background-color:  hsl(224, 65%, 95%);
+    border-radius: 5px;
+}
+
+#slider::-webkit-slider-thumb{
+
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    /* background-color: red; */
+
+}
+
+#selector{
+
+    height: 100px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    /* background-color: green; */
+    transform: translateX(-50%);
+}
+
+#selectorBtn{
+
+    width: 40px;
+    height: 40px;
+    background: hsl(174, 86%, 45%) url(../images/icon-slider.svg) center no-repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 50%;
+    z-index: 3;
+    cursor: pointer;
+   
+}
+
+#progressBar{
+
+    background-color: hsl(174, 77%, 80%);
+    width: 0%;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.detail-plans{
+
+    display: flex;
+    place-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.empty{
+
+    width: 25%;
+}
+
+.toggle{
+
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: hsl(223, 50%, 87%);
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+   
+  
+}
+
+.toggle:hover{
+
+    background-color: hsl(174, 86%, 45%);
+
+
+}
+.move{
+
+  transform: translateX(20px);
+
+}
+
+.change_color{
+
+    background-color:hsl(174, 86%, 45%) ;
+}
+
+
+
+.ball {
+
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 1px;
+    
+   
+}
+
+small{
+
+    color:hsl(225, 20%, 60%);
+    font-size: 12px;
+}
+
+.discount{
+    
+    width: 90px;
+    height: 20px;
+    display: flex;
+    padding: 1px;
+    border-radius: 10px;
+    place-items: center;
+    background-color: hsl(14, 92%, 95%);
+    padding: 3px;
+    text-align: center;
+    justify-content: center;
+}
+
+.discount small{
+
+    font-size: 11px;
+    font-weight: bold;
+    color:  hsl(15, 100%, 70%);
+}
+
+.divider{
+
+    width: 100%;
+    height: 2px;
+    background-color: hsl(224, 65%, 95%);
+    position:absolute;
+    top: 55%;
+    left: 0;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.check{
+
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+
+
+.btn{
+
+    background-color: transparent;
+    border: none;
+    background-color: hsl(227, 35%, 25%);
+    color: hsl(223, 50%, 87%);
+    font-family: 'Manrope', sans-serif;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover{
+
+    color: white;
+    box-shadow: 0px 0px 80px hsla(227, 35%, 25%, 0.473);
+    
+}
+
+.features{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.trial_button{
+
+    display: flex;
+    place-items: center;
+}
+
+.discount-mobile{
+
+    display: none;
+    width: 0;
+}
+
+
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size: 20px;
+    }
+
+    .heading p{
+
+        max-width: 200px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .heading{
+
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .card{
+
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pageview{
+
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .pages{
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slider{
+
+        top: -80px;
+    }
+
+    .price{
+
+       position: relative;
+       top: 80px;
+       margin-bottom: 20px;
+    }
+
+    .empty{
+
+        display: none;
+        width: 0;
+    }
+
+
+    .features{
+
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .f1{
+
+        margin-bottom: 5px;
+    }
+
+    .btn{
+
+        margin-top: 30px;
+        width: 180px;
+    }
+
+    .mob{
+
+        display: none;
+        width: 0;
+    }
+
+    .discount-mobile{
+
+        min-width: 60px;
+        height: 20px;
+        display: flex;
+        padding: 1px 5px;
+        border-radius: 10px;
+        place-items: center;
+        background-color: hsl(14, 92%, 95%);
+        padding: 3px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .discount-mobile small{
+
+        font-size: 11px;
+        font-weight: bold;
+        color:  hsl(15, 100%, 70%);
+    }
+    .detail-plans{
+
+        justify-content: center;
+    }
+
+    .divider{
+
+        top: 52%;
+    }
+
+    .card-container{
+
+        max-width: 500px;
+        overflow: hidden;
+    }
+
+
+}
+
+
+
